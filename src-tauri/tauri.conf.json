@@ -1,0 +1,21 @@
+{
+  "build": {
+    "beforeBuildCommand": "",
+    "beforeDevCommand": "pnpm --filter ./web dev",
+    "devPath": "http://localhost:3000",
+    "distDir": "../web/dist"
+  },
+  "package": {
+    "productName": "ValorantCoaching",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "windows": [
+      {
+        "title": "Valorant Coaching",
+        "width": 1200,
+        "height": 800
+      }
+    ]
+  }
+}

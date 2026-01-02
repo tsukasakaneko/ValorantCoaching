@@ -1,0 +1,9 @@
+[package]
+name = "valorant_coaching"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Use tauri stable - adjust version if needed
+tauri = { version = "1", features = ["api-all"] }
+serde = { version = "1.0", features = ["derive"] }
