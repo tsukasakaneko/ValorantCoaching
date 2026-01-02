@@ -1,5 +1,6 @@
-# Base image
-FROM mcr.microsoft.com/devcontainers/base:noble
+# Base image (use a glibc-based image to ensure manylinux wheels are available)
+# Using Ubuntu-based devcontainer image to avoid musl/Alpine incompatibilities
+FROM mcr.microsoft.com/devcontainers/base:ubuntu
 
 # Install system packages required for Tauri, ONNX runtime and video processing
 RUN apt-get update && \
